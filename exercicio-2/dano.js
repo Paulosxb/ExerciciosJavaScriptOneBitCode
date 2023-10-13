@@ -20,6 +20,6 @@ alert(atacante + " causou " + danoCausado + " pontos de dano em " + defensor)
 alert(
     atacante + "\nPoder de ataque: " + poderDeAtaque + "\n\n" + 
     defensor + "\nPontos de vida restantes: " + pontosDeVida +
-    "\nPoder de Defesa: "+ podendoDeDefesa+"\nPossui Escudo: " + possuiEscudo
+    "\nPoder de Defesa: " + podendoDeDefesa + "\nPossui Escudo: " + possuiEscudo
 )
 
