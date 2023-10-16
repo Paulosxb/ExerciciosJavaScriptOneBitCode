@@ -26,8 +26,8 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
-    //Verificar se a situação soi selecionada
-    if(jobSelect.value === ) {
+    //Verificar se a situação foi selecionada
+    if(jobSelect.value === "") {
         alert("Por favor, selecione a sua situação");
         return;
     }
