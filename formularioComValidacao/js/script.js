@@ -20,6 +20,24 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
+    //Verifica se a senha está preenchida corretamente
+    if (!isValidPasswordLength(passwordInput.value, 8)) {
+        alert("A senha precisa ter no mínimo 8 caracteres");
+        return;
+    }
+
+    //Verificar se a situação soi selecionada
+    if(jobSelect.value === ) {
+        alert("Por favor, selecione a sua situação");
+        return;
+    }
+
+    //Verificar se a nensagem está preenchida
+    if(messageTextarea.value === "") {
+        alert("Por favor, escreva uma mensagem para nós");
+        return;
+    }
+
     //Se todos os campos estiverem corretamente preenchidos, envie o form
     form.sumit();
 })
@@ -37,4 +55,15 @@ function isEmailValid(email) {
     }
 
     return false;
+}
+
+//Função valida a senha
+function validatePassword(password, minDigits) {
+    if(password.length >= minDigits) {
+        //Senha válida
+        return true;
+    }
+
+    //Senha invalida
+    return false
 }
