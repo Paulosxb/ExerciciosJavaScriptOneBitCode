@@ -21,7 +21,7 @@ form.addEventListener("submit", (event) => {
     }
 
     //Verifica se a senha está preenchida corretamente
-    if (!isValidPasswordLength(passwordInput.value, 8)) {
+    if (validatePassword(passwordInput.value, 8)) {
         alert("A senha precisa ter no mínimo 8 caracteres");
         return;
     }
@@ -51,17 +51,17 @@ function isEmailValid(email) {
     );
     
     if (emailRegex.test(email)) {
-        return true;
+        return true
     }
 
-    return false;
+    return false
 }
 
 //Função valida a senha
 function validatePassword(password, minDigits) {
     if(password.length >= minDigits) {
         //Senha válida
-        return true;
+        return true
     }
 
     //Senha invalida
